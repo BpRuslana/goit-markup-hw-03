@@ -14,6 +14,9 @@ body {
     background-color: var(--white-colour);
     display: block
 } 
+img {
+    display: block
+}
 .list {
     list-style: none;
 }
@@ -35,7 +38,9 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     font-style: normal;
-    margin-right: 76px
+    margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
 
 }
 .span-logo {
@@ -46,19 +51,27 @@ body {
 
 /*HEADER*/
 .header {
-    border-bottom: 1px solid var(--border-bottom)
+    border-bottom: 1px solid var(--border-bottom);
+    background: var(--white-colour);
+
 }
 
 /*Site nav*/
 .nav {
     display: flex;
     align-items: center;
+    width: 1158px;
+    padding: 0 15px;
+    
 
 }
 .site-nav {
     list-style: none;
     font-family: "Roboto";
     font-style: normal;
+    display: flex;
+    gap: 40px;
+
 }
 .site-nav .link {
     color: var(--navyblue-colour);
@@ -68,6 +81,7 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
+    padding: 24px 0
     
     
 }
@@ -78,7 +92,10 @@ body {
 /*Address*/
 .address {
     list-style: none;
-    font-style: normal
+    font-style: normal;
+    display: flex;
+    gap: 40px;
+
 }
 .address .link {
     color: var(--slate-colour);
@@ -124,7 +141,10 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-color: var(--navyblue-colour)
+color: var(--navyblue-colour);
+text-align: center;
+margin-bottom: 8px;
+
 
 }
 /*Features*/
@@ -145,20 +165,37 @@ color: var(--navyblue-colour)
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+    text-align: center;
 }
 /*What are we doing*/
 
 /* Our Team*/
+.section {
+    display: flex;
+    gap: 24px;
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
 .sectiontitle {
     background-color: var(--cloud-colour);
+    padding: 120px 0;
+
 }
 .section-title.sectiontitle
 {
-    background-color: var(--white-colour)}
+    background-color: var(--white-colour);
+    margin-bottom: 72px;
+}
+.position {
+    padding: 32px 0;
+
+}
    
 /*Footer*/
 .footer {
-    background-color: var(--navyblue-colour)
+    background-color: var(--navyblue-colour);
+    padding: 100px 0;
+
 }
 .text-footer {
     color: var(--cloud-colour);
@@ -169,6 +206,7 @@ color: var(--navyblue-colour)
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+    max-width: 264px
 }
 .footer .span-logo {
     color: var(--cloud-colour);
