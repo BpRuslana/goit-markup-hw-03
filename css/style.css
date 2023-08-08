@@ -1,0 +1,198 @@
+:root {
+    --navyblue-colour: #2E2F42;
+    --slate-colour: #434455;
+    --iris-colour: #4D5AE5;
+    --white-colour:  #FFFFFF;
+    --cloud-colour:  #F4F4FD;
+    --ocean-colour:  #404BBF;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--slate-colour);
+    background-color: var(--white-colour)
+}
+.list {
+    list-style: none;
+}
+
+/*Logo*/
+.logo {
+    color: var(--iris-colour);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: normal
+
+}
+.span-logo {
+    color: var(--navyblue-colour);
+    background-color: var(var(--cloud-colour))
+}
+
+
+/*Site nav*/
+.site-nav {
+    list-style: none;
+    font-family: "Roboto";
+    font-style: normal;
+}
+.site-nav .link {
+    color: var(--navyblue-colour);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none
+    
+    
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--ocean-colour);
+}
+/*Address*/
+.address {
+    list-style: none;
+    font-style: normal
+}
+.address .link {
+    color: var(--slate-colour);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;  
+    font-style: normal;
+    list-style: none;
+}
+.address .link:hover,
+.address .link:focus {
+    color: var(--ocean-colour);
+}
+   
+/*Hero*/
+.hero {
+    background: var(--navyblue-colour);
+}
+.hero-title {
+    color: var(--white-colour);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+
+}
+/*Advantages*/
+.section-title {
+    background-color: var(--cloud-colour);
+    color: var(--navyblue-colour);
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.title {
+background-color: var(--white-colour);
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--navyblue-colour)
+
+}
+/*Features*/
+.feature .title {
+    color: var(--navyblue-colour);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.text {
+    color: var(--slate-colour);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+/*What are we doing*/
+
+/* Our Team*/
+.sectiontitle {
+    background-color: var(--cloud-colour);
+}
+.section-title.sectiontitle
+{
+    background-color: var(--white-colour)}
+   
+/*Footer*/
+.footer {
+    background-color: var(--navyblue-colour)
+}
+.text-footer {
+    color: var(--cloud-colour);
+    background: var(--navyblue-colour);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.footer .span-logo {
+    color: var(--cloud-colour);
+    background-color: var(--navyblue-colour)
+}
+/*Button*/
+
+.button { 
+background: var(--iris-colour);
+color: var(--white-colour);
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+cursor: pointer;
+text-decoration: none
+}
+.button:hover,
+.button:focus {
+    background-color: var(--ocean-colour);
+}
+
+.button.primery {
+    color: var(--iris-colour);
+    background-color: var(--cloud-colour)
+}
+.button.primery:hover,
+.button.primery:focus {
+    color: var(--white-colour);
+    background-color: var(--ocean-colour);
+}
+.link{
+    text-decoration: none
+}
+
+.pic {
+background-color: var(--white-colour)
+;
+}
+
+
+
+
+
+
+
