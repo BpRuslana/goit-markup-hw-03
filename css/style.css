@@ -5,15 +5,23 @@
     --white-colour:  #FFFFFF;
     --cloud-colour:  #F4F4FD;
     --ocean-colour:  #404BBF;
+    --border-bottom: #e7e9fc
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: var(--slate-colour);
-    background-color: var(--white-colour)
-}
+    background-color: var(--white-colour);
+    display: block
+} 
 .list {
     list-style: none;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*Logo*/
@@ -26,7 +34,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    font-style: normal
+    font-style: normal;
+    margin-right: 76px
 
 }
 .span-logo {
@@ -35,7 +44,17 @@ body {
 }
 
 
+/*HEADER*/
+.header {
+    border-bottom: 1px solid var(--border-bottom)
+}
+
 /*Site nav*/
+.nav {
+    display: flex;
+    align-items: center;
+
+}
 .site-nav {
     list-style: none;
     font-family: "Roboto";
@@ -47,7 +66,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none
+    text-decoration: none;
+    display: flex;
     
     
 }
