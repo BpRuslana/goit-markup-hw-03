@@ -33,6 +33,7 @@ ul {
 .header {
     border-bottom: 1px solid var(--border-bottom);
     background: var(--white-colour);
+    display: flex;
 }
 /*Site nav*/
 .header-nav {
@@ -40,6 +41,10 @@ ul {
     align-items: center;
     width: 1158px;
     padding: 0 15px;
+}
+.header-nav:hover,
+.header-nav:focus {
+    color: var(--ocean-colour);
 }
 .header list{ 
     color: var(--navyblue-colour);
@@ -65,29 +70,23 @@ ul {
     margin-right: 76px;
     display: inline-block;
     margin-bottom: 16px;
-
-
-
 }
 .span-accent {
     color: var(--navyblue-colour);
     background-color: var (--cloud-colour)
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--ocean-colour);
-}
 /*Address*/
+.address {
+    display: flex;}
 .header-address {
     list-style: none;
     font-style: normal;
     display: flex;
     gap: 40px;
 }
-.address {}
 .address-item {}
-.address-link{
+.address-list {
     color: var(--slate-colour);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -95,14 +94,15 @@ ul {
     font-style: normal;
     list-style: none;
 }
-.address .link:hover,
-.address .link:focus {
+.address:hover,
+.address:focus {
     color: var(--ocean-colour);
 }
    
 /*Hero*/
 .hero {
     background: var(--navyblue-colour);
+    padding: 188px 0
 }
 .hero-title {
     color: var(--white-colour);
@@ -113,6 +113,7 @@ ul {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    max-width: 496px
 
 }
 /*Advantages*/
@@ -173,12 +174,10 @@ advantages-text {
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
-
 .doing-title {
     background-color: var(--cloud-colour);
     padding: 120px 0;
 }
-
 .section-title {
     background-color: var(--white-colour);
     margin-bottom: 72px;
@@ -274,8 +273,15 @@ background-color: var(--white-colour)
 
 .filtr-item {}
 /*Button*/
+.button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background-color:var(--iris-colour);
+    border-radius: 4px
+}
 .btn {
-    background: var(--iris-colour);
     color: var(--white-colour);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -283,7 +289,8 @@ background-color: var(--white-colour)
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
+   
 }
 .primery {
     color: var(--iris-colour);
