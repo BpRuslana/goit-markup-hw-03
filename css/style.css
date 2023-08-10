@@ -157,8 +157,11 @@ a {
 .advantages {
     display: flex;
     gap: 24px;
+    padding: 120px 0;
 }
-
+.visually-hidden {
+    visibility: hidden;
+}
 .section-title {
     background-color: var(--cloud-colour);
     color: var(--navyblue-colour);
@@ -176,8 +179,7 @@ advantages-text {
 }
 /*Advantages*/
 .advantages {
-    display: flex;
-    gap: 24px;
+    
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
@@ -191,7 +193,10 @@ advantages-text {
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;;
+    overflow: hidden;
+    display: flex;
+    gap: 24px;
+
 }
 .advantages-item {
     width: calc((100% - 72px) / 4);
@@ -376,7 +381,12 @@ background-color: var(--white-colour)
 }
 /*Portfolio Section*/
 
-.portfolio {}
+.portfolio {
+    padding-top: 96px; 
+    padding-bottom: 120px;
+}
+
+.portfolio-list {}
 
 .portfolio-item {}
 
