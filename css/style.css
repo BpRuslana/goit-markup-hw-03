@@ -55,15 +55,9 @@ a {
 /*Site nav*/
 .header-nav {
     display: flex;
-
+    align-items: center;
 }
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding: 24px 0
-}
-.header.list{ 
+.header-list{ 
     color: var(--navyblue-colour);
     font-weight: 500;
     font-size: 16px;
@@ -71,16 +65,21 @@ a {
     letter-spacing: 0.02em;
     text-decoration: none;
     align-self: center;
-    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 24px 0;
+    gap: 40px
+    
    
 }
 .header-link {
     color: var(--navyblue-colour);
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     display: block;
+    padding: 24px 0
 }
 .header-link:hover,
 .header-link:focus {
@@ -110,12 +109,11 @@ a {
     display: flex;
     gap: 40px;
 }
-.address {
+.address-list {
     display: flex;
     gap: 40px;
     padding: 24px 0; 
-}
-.list {
+    
     color: var(--slate-colour);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -266,8 +264,9 @@ advantages-text {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
 }
-.teame-name{
+.team-name{
     padding: 32px 0;
+    
 }
 .team-subtitle {
     font-weight: 500;
