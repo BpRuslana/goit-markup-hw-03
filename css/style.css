@@ -57,7 +57,13 @@ a {
     display: flex;
     align-items: center;
 }
-.header-list{ 
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 24px 0
+}
+.header.list{ 
     color: var(--navyblue-colour);
     font-weight: 500;
     font-size: 16px;
@@ -65,12 +71,7 @@ a {
     letter-spacing: 0.02em;
     text-decoration: none;
     align-self: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding: 24px 0;
-    gap: 40px
-    
+    align-items: center;
    
 }
 .header-link {
@@ -79,7 +80,6 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     display: block;
-    padding: 24px 0
 }
 .header-link:hover,
 .header-link:focus {
@@ -109,11 +109,12 @@ a {
     display: flex;
     gap: 40px;
 }
-.address-list {
+.address {
     display: flex;
     gap: 40px;
     padding: 24px 0; 
-    
+}
+.list {
     color: var(--slate-colour);
     line-height: 1.5;
     letter-spacing: 0.02em;
