@@ -40,10 +40,6 @@ a {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 /* Header section */
 .header {
@@ -406,3 +402,11 @@ advantages-text {
     letter-spacing: 0.32px;
     max-width: 264px;
 }
+
+
+
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
