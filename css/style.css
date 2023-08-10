@@ -334,17 +334,20 @@ advantages-text {
     background-color: var(--navyblue-colour)
 }
 
-.pic {
-background-color: var(--white-colour)
-;
+/*Filtr section*/
+
+.filtr {
+    padding-top: 96px; 
+    padding-bottom: 120px;
+}
+.list {
+    justify-content: center
 }
 
-/*Filtr section*/
-.filtr {}
-
-.list {}
-
-.filtr-item {}
+.filtr-item {
+    justify-content: center;
+    margin-bottom: 72px
+}
 /*Button*/
 .button {
     display: block;
@@ -359,7 +362,22 @@ background-color: var(--white-colour)
     min-width: 169px; 
     cursor: pointer;
 }
-.btn {
+
+.primery {
+    padding: 12px 24px;
+    border: 1px solid var(--border-bottom);
+    border-radius: 4px;
+}
+.primery:hover,
+.primery:focus {
+    border: 1px solid transparen
+}
+
+
+
+
+
+
     color: var(--white-colour);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
