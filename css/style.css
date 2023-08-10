@@ -364,57 +364,69 @@ advantages-text {
 }
 
 .primery {
+    color: var(--iris-colour);
+    background-color: var(--cloud-colour)
     padding: 12px 24px;
     border: 1px solid var(--border-bottom);
     border-radius: 4px;
 }
 .primery:hover,
 .primery:focus {
+    color: var(--white-colour);
+    background-color: var(--ocean-colour);
     border: 1px solid transparen
 }
 
-
-
-
-
-
-    color: var(--white-colour);
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    text-decoration: none;
-   
-}
-.primery {
-    color: var(--iris-colour);
-    background-color: var(--cloud-colour)
-}
-.primery:hover,
-.primery:focus {
-    color: var(--white-colour);
-    background-color: var(--ocean-colour);
-}
 /*Portfolio Section*/
-
 .portfolio {
     padding-top: 96px; 
     padding-bottom: 120px;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
 
-.portfolio-item {}
 
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+    background: var(--white-colour);
+}
+.portfolio-container {
+    padding: 32px 16px;
+    border: 1px solid var(--border-bottom);
+    border-top: none;
+}
 .portfolio-link {}
 
 .portfolio-img {}
 
-.portfolio-subtitle {}
+.portfolio-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navyblue-colour);
+    margin-bottom: 8px;
+}
+.portfolio-container {
+    padding: 32px 16px;
+    border: 1px solid var(--border-bottom);
+    border-top: none;
+    margin-bottom: 8px;
+    max-width: 1158px;
+}
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-colour)
+}
 
-.portfolio-text {}
+
 
 
 
