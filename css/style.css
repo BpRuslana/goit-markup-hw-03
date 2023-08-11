@@ -29,11 +29,16 @@ img , svg {
     max-width: 100%;
     height: auto;
 }
-a {
+.link {
     text-decoration: none;
     color: currentColor;
 }
 
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .container {
     width: 1158px;
     margin-left: auto;
@@ -46,13 +51,14 @@ a {
     border-bottom: 1px solid var(--border-bottom);
     background: var(--white-colour);
     display: flex;
-    
+}
+.header-container {
+    display: flex;
 }
 /*Site nav*/
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 40px
 }
 
 .header-list { 
@@ -71,15 +77,17 @@ a {
     padding: 24px 0
    
 }
-.header-link {
+.header-nav-link{
     color: var(--navyblue-colour);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: block;
+    display: inline-block;
+    padding: 24px 0;
+
 }
-.header-link:hover,
-.header-link:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
     color: var(--ocean-colour);
 }
 /*Logo*/
@@ -102,24 +110,23 @@ a {
 /*Address*/
 .header-address {
     font-style: normal;
+    margin-left: auto;
 }
 .address-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0; 
-    list-style: none;
 }
 
 .address-item {
+   
+}
+.address-link {
+    display: inline-block;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-colour);
-    text-decoration: none;
-}
-.address-link {
-    display: block;
-    padding: 24px 0;
 }
 .address-link:hover,
 .address-link:focus {
@@ -150,12 +157,10 @@ a {
     gap: 24px;
     padding: 120px 0;
 }
-.visually-hidden {
-    visibility: hidden;
-}
+
 .section-title {
-    background-color: var(--cloud-colour);
-    color: var(--navyblue-colour);
+    background-color: var (--cloud-colour);
+    color: var (--navyblue-colour);
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -169,7 +174,7 @@ a {
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
-.advantages-list{
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -183,6 +188,12 @@ a {
     display: flex;
     gap: 24px;
     list-style: none;
+
+}
+.advantages-list{
+    display: flex;
+    gap: 24px;
+  
 
 }
 .advantages-item {
@@ -219,14 +230,14 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
-    list-style: none;
+    
 }
-.list {
+.doing-title-list {
     display: flex;
-    gap: 24px;
+    
 }
 .doing-item {
-    width: calc((100% - 48px) / 3);
+   
 }
 .doing-img {}
 
@@ -280,10 +291,10 @@ a {
     padding-top: 96px; 
     padding-bottom: 120px;
 }
-.filtr-list.list {
+.filtr-list {
     justify-content: center;
     margin-bottom: 72px;
-    list-style: none;
+    
 }
 
 .filtr-item {
@@ -291,6 +302,7 @@ a {
     
 }
 /*Button*/
+.filtr-container {}
 .button {
     display: block;
     min-width: 169px;
