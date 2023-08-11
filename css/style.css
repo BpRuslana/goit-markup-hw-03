@@ -338,7 +338,7 @@ img , svg {
 .button-primery:focus {
     color: var(--white-colour);
     background-color: var(--ocean-colour);
-    border: 1px solid transparet
+    border: 1px solid transparent;
 }
 /*Portfolio Section*/
 .portfolio {
