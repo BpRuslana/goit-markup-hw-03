@@ -50,7 +50,6 @@ img , svg {
 .header {
     border-bottom: 1px solid var(--border-bottom);
     background: var(--white-colour);
-    display: flex;
 }
 .header-container {
     display: flex;
@@ -60,9 +59,11 @@ img , svg {
     display: flex;
     align-items: center;
 }
-
 .header-list { 
     color: var(--navyblue-colour);
+    display: flex;
+    padding: 24px 0;
+    gap: 40px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -70,11 +71,9 @@ img , svg {
     text-decoration: none;
     align-self: center;
     align-items: center;
-    display: flex;
-    list-style: none;
+    
     padding: 0;
     margin: 0;
-    padding: 24px 0
    
 }
 .header-nav-link{
@@ -101,6 +100,7 @@ img , svg {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     padding: 24px 0 24px;
+    text-decoration: none;
 }
 .span-accent {
     color: var(--navyblue-colour);
@@ -290,44 +290,39 @@ img , svg {
 .filtr {
     padding-top: 96px; 
     padding-bottom: 120px;
+
 }
 .filtr-list {
+    display: flex;
+    gap: 24px;
     justify-content: center;
     margin-bottom: 72px;
+    
     
 }
 
 .filtr-item {
-    justify-content: center;
-    
+   
 }
 /*Button*/
 .filtr-container {}
-.button {
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    background-color:var(--iris-colour);
-    color: var(--white-colour);
-    border-radius: 4px;
-    margin-top: 48px;
-    margin: 0 auto ;
-    min-width: 169px; 
-    cursor: pointer;
-}
 
-.primery {
-    color: var(--iris-colour);
-    background-color: var(--cloud-colour);
+
+
+.button-primery {
+    display: block;
+    border-radius: 4px;
     padding: 12px 24px;
     border: 1px solid var(--border-bottom);
-    border-radius: 4px;
-}
-.primery:hover,
-.primery:focus {
+    background-color: var(--iris-colour);
     color: var(--white-colour);
-    background-color: var(--ocean-colour);
+    cursor: pointer;
+    height: 56px;
+    margin-top: 48px;
+    margin: 0 auto;
+}
+.button-primery:hover,
+.button-primery:focus {
     border: 1px solid transparen
 }
 /*Portfolio Section*/
@@ -352,7 +347,9 @@ img , svg {
     border-top: none;
 
 }
-.portfolio-link {}
+.portfolio-link {
+    
+}
 
 .portfolio-img {}
 
